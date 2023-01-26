@@ -1,0 +1,16 @@
+[project]
+name = "terminology"
+version = "1.0"
+authors = [
+    { name="Jaume Zaragoza", email="jzaragoza@prompsit.com"},
+]
+readme = "README.md"
+requires-python = '>=3.7'
+dependencies = [
+    "regex",
+]
+
+[project.scripts]
+inject-terms = "terminology.inject_terms:main"
+tbx2json = "terminology.tbx2json:main"
+term2dix = "terminology.term2dix:main"
